@@ -7,8 +7,14 @@ function App() {
       <link href="https://db.onlinewebfonts.com/c/d642a55bac4df71e7c87a9394df80363?family=Cera+Round+Pro+DEMO+Regular" rel="stylesheet"/>
       <header>
         <nav>
-          <img width="35" height="35" src="https://img.icons8.com/external-obivous-color-kerismaker/48/external-brand-seo-color-obivous-color-kerismaker.png" alt="external-brand-seo-color-obivous-color-kerismaker"/>
-          <h1>Project Site</h1>
+        <img width="35" height="35" src="https://img.icons8.com/external-obivous-color-kerismaker/48/external-brand-seo-color-obivous-color-kerismaker.png" alt="external-brand-seo-color-obivous-color-kerismaker"/>
+        <h1>Project Site</h1>
+        
+        <div className="tres-barras-container">
+          <div className="barra"></div>
+          <div className="barra"></div>
+          <div className="barra"></div>
+        </div>
           <a href="#section1" className = "info">About</a>
           <a href="#section2" className = "info">Pricing</a>
           <a href="#section3" className = "info">Suport</a>
@@ -43,6 +49,7 @@ function App() {
 
       </section>
       <section id = "section2">
+        <div className="card-container">
           <div className="card shadow" id = "free"><h2>Free Plan</h2>
             <p>Lorem ipsum dolor sit amet. Ut repellat unde est quia sunt a rerum aliquam sit 
               necessitatibus commodi qui praesentium porro sit velit amet? Aut accusamus perspiciatis est quasi. Qui placeat voluptate sed quod quam sed quia eveniet ea dolor consectetur et nemo fuga et maiores nisi. Est dolorem autem. </p>
@@ -58,6 +65,7 @@ function App() {
               necessitatibus commodi qui praesentium porro sit velit amet? Aut accusamus perspiciatis est quasi. Qui placeat voluptate sed quod quam sed quia eveniet ea dolor consectetur et nemo fuga et maiores nisi. Est dolorem autem. </p>
             <h4> PRICE PLAN: $40 </h4>
           </div>
+        </div>
       </section>
       <section id = "section3">
           <h1>CONTACT INFORMATION:</h1>

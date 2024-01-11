@@ -38,6 +38,7 @@ nav h1 {
 	font-size: 35px;
 	font-weight: 800;
 	margin-left: 20px;
+  white-space: nowrap;
 }
 nav img {
 	margin-left: 20px;
@@ -53,19 +54,38 @@ nav img {
 .sign-in:hover {
 	box-shadow: 0 3px 8px rgba(0, 0, 0, 0.5);
 }
+
+.tres-barras-container {
+  display: flex;
+  flex-direction: column; 
+  margin-left: 16px;
+  height: 25px;
+  width: 30px;
+  background-color: transparent;
+  margin-left: auto;
+  cursor: pointer;  
+}
+.barra {
+  margin: 2px auto;
+  height: 4px;
+  width: 100%;
+  background-color: black;
+  border-radius: 5px;
+}
+
 main {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 12px;
+  padding-right: 12px;
   display: grid;
   justify-content: center;
   flex-direction: column;
 }
 section {
 	font-family: "Cera Round Pro DEMO Regular", sans-serif; 
-	padding: 60px 0 60px 0;
+	padding: 50px 0 50px 0;
 	display: flex;
 	flex-direction: column;
 }
@@ -80,10 +100,6 @@ section {
 }
 
 #section2 {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	gap: 10%;
 	overflow: hidden;
   height: fit-content;
 }
@@ -98,7 +114,13 @@ section {
   border-radius: 10px;
   transition: border-radius 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);           
 }
-
+.card-container {
+  display: grid;
+  grid-gap: 20px 10px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  align-items: center; 
+  justify-items: center;
+}
 .card p {
 	font-size: 14px;
 	padding: 10px 0px 10px 10px;
@@ -124,6 +146,7 @@ section {
 #section4 {
 	color: #e0ebeb;
 	display: flex;
+  width: fit-content;
 }
 #section4 div {
 	margin: 10px 0 8px 0;
@@ -132,7 +155,6 @@ section {
 
 #section4 input {
 	height: 22px;
-	width: 20%;
   border-radius: 4px;
 }
 
@@ -145,3 +167,55 @@ section {
   align-items: center;
   gap: 10px;
 }
+
+@media screen and (min-width: 0px) {
+  nav a {
+    display: none;
+  }
+  nav h1 {
+    font-size: 25px;
+    white-space: nowrap;
+  }
+  nav img {
+    margin-left: 10px;
+  }
+  .tres-barras-container {
+    display: flex;
+  }
+}
+
+
+@media screen and (min-width: 300px) {
+  nav a {
+    display: none;
+  }
+  nav h1 {
+    font-size: 25px;
+    white-space: nowrap;
+  }
+  nav img {
+    margin-left: 10px;
+  }
+  .tres-barras-container {
+    display: flex;
+  }
+}
+
+
+@media screen and (min-width: 650px) {
+  nav a {
+    display: flex;
+  }
+  nav h1 {
+    font-size: 35px;
+  }
+  .tres-barras-container {
+    display: none;
+  }
+  nav img {
+    margin-left: 20px;
+  }
+
+}
+
+
