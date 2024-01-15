@@ -1,4 +1,4 @@
-<h1 align="center">Landing Page + Vite</h1>
+<h1 align="center">Landing Page React + Vite</h1>
 
 <div align="center">
   <h3> 
